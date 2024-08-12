@@ -18,14 +18,7 @@ export default function RootLayout({
   return (
     <ClerkProvider afterSignOutUrl="/sign-in">
       <html lang="en">
-        <body>
-          <ClerkLoading>
-            <div>Clerk is loading...</div>
-          </ClerkLoading>
-          <ClerkLoaded>
-            {children}
-          </ClerkLoaded>
-        </body>
+        <body className={inter.className}>{children}</body>
       </html>
     </ClerkProvider>
   );
